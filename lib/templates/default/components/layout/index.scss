@@ -1,0 +1,9 @@
+/* @styled-jsx=global */
+@import "css/reset";
+@import "css/fn";
+
+select {
+  border: 0;
+  background: transparent;
+  outline: 0;
+}

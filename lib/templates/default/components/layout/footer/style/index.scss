@@ -1,0 +1,68 @@
+.sp-footer {
+    overflow: hidden;
+    padding: 50px 0 30px;
+    background-color: #383838;
+}
+
+.sp-footer__logo {
+    display: block;
+    width: 268px;
+    height: 50px;
+    margin: 0 auto;
+    background: url('/static/images/logo-white-new.png');
+    background-size: 100% 100%;
+}
+
+.sp-footer__about {
+    margin: 20px 0;
+    padding: 0 32px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 28px;
+    color: #fff;
+}
+
+.sp-footer__ad-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+
+    i {
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 20px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center center;
+    }
+
+    .advantages_bg-free {
+        background-image: url('../img/free.png');
+    }
+
+    .advantages_bg-rebook {
+        background-image: url('../img/rebook.png');
+    }
+
+    .advantages_bg-guaranteed {
+        background-image: url('../img/guaranteed.png');
+    }
+
+    .advantages_bg-no_credit_fee {
+        background-image: url('../img/credit-card.png');
+    }
+}
+
+.sp-footer__code {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+@import './theme_blue.scss';

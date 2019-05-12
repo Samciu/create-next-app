@@ -1,0 +1,186 @@
+/* 清理浮动 */
+
+.fn-clear {
+  *zoom: 1;
+}
+
+.fn-clear:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+
+/* 设置内联, 减少浮动带来的bug */
+
+.fn-left {
+  float: left;
+}
+
+.fn-right {
+  float: right;
+}
+
+
+/* 隐藏, 通常用来与 JS 配合 */
+
+.fn-hide {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.fn-invisible {
+  visibility: hidden;
+}
+
+
+/* 单行文字溢出时出现省略号，需设定宽度 */
+
+.fn-text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* 人民币符号 */
+
+.fn-rmb {
+  font-family: arial;
+  font-style: normal;
+}
+
+
+/* chrome 下字体过小的问题 */
+
+.fn-webkit-adjust {
+  -webkit-text-size-adjust: none;
+}
+
+
+/* 隐藏文字 */
+
+.fn-text-hide {
+  border: 0;
+  font: 0/0 a;
+  color: transparent;
+  background-color: transparent;
+  text-shadow: none;
+}
+
+//
+.grade {
+  width: 108px;
+  height: 20px;
+  font-size: 20px;
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+  &.region {
+    width: 108px;
+    height: 20px;
+    font-size: 20px;
+    vertical-align: sub;
+    margin-bottom: 1px;
+    display: inline-block;
+  }
+  &.route {
+    width: 130px;
+    height: 24px;
+    font-size: 24px;
+    margin-bottom: -5px;
+    display: inline-block;
+  }
+  .grade-before {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .grade-after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .icons-stars {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    &.yellow {
+      color: #ffd83a;
+    }
+    &.yellow-1 {
+      color: #fedc52;
+    }
+    &.white {
+      color: #fff;
+    }
+    &.opacity {
+      color: rgba(#666, 0.9);
+    }
+  }
+}
+
+.fn-image-animation {
+  &:hover {
+    .fn-img img {
+      transform: translate3d(0, 0, 0) scale(1.1);
+    }
+  }
+  .fn-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    >img {
+      width: 100%;
+      height: 100%;
+      transform: translate3d(0, 0, 0) scale(1);
+      transition: transform 0.5s ease-in-out;
+    }
+  }
+}
+
+
+.fn-back-to-top{
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  text-align: center;
+  right: 10px;
+  bottom: 10px;
+  z-index: 999;
+  cursor: pointer;
+  border-radius: 10px;
+  i{
+    color: #3488ee;
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  &:hover{
+    background:#3488ee;
+    i{
+      color: #fff;
+    }
+  }
+}
+
+
+.fn-scrollbar {
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(#122b4a, .4);
+    border-radius: 4px;
+  }
+}

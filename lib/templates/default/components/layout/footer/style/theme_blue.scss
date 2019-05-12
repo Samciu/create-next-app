@@ -1,0 +1,68 @@
+.theme_blue {
+    &.sp-footer {
+        background: #164ab0;
+    }
+
+    .sp-footer__logo {
+        width: 328px;
+        height: 60px;
+        background-image: url('../img/theme_blue/logo@2x.png');
+    }
+
+    .sp-footer__about,
+    .sp-footer__ad-list {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .sp-footer__code {
+        font-size: 24px;
+    }
+
+    .sp-footer__ad-list {
+        i {
+            width: 74px;
+            height: 74px;
+        }
+    }
+
+    .advantages_bg-free {
+        background-image: url('../img/theme_blue/icon_freecancelllation@2x.png');
+    }
+
+    .advantages_bg-rebook {
+        background-image: url('../img/theme_blue/icon_pdp@2x.png');
+    }
+
+    .advantages_bg-guaranteed {
+        background-image: url('../img/theme_blue/icon_lowest@2x.png');
+    }
+
+    .advantages_bg-no_credit_fee {
+        background-image: url('../img/theme_blue/icon_credit@2x.png');
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .theme_blue {
+        .sp-footer__logo {
+            background-image: url('../img/theme_blue/logo@3x.png');
+        }
+
+        .advantages_bg-free {
+            background-image: url('../img/theme_blue/icon_freecancelllation@2x.png');
+        }
+
+        .advantages_bg-rebook {
+            background-image: url('../img/theme_blue/icon_pdp@3x.png');
+        }
+
+        .advantages_bg-guaranteed {
+            background-image: url('../img/theme_blue/icon_lowest@3x.png');
+        }
+
+        .advantages_bg-no_credit_fee {
+            background-image: url('../img/theme_blue/icon_credit@3x.png');
+        }
+    }
+}
